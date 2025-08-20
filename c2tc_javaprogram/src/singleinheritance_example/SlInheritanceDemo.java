@@ -6,7 +6,7 @@ public class SlInheritanceDemo {
                                 52, "Lead", "Chennai/Puducherry");
         System.out.println(t);
         
-        Person p = new Person(113,"Hemalatha","Puducherry");
+        Person p = new Person(113,"dharshini","Puducherry");
         System.out.println(p);
     }
 }
