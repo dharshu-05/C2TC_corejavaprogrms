@@ -1,4 +1,4 @@
-package com.tnsif.Assignment3;
+package Assignment3;
 
 public abstract class Item {
     int id;
