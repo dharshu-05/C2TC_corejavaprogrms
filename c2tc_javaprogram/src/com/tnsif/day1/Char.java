@@ -1,4 +1,4 @@
-package com.tnsif.Day1;
+package com.tnsif.day1;
 
 public class Char {
 
