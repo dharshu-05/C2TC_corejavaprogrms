@@ -1,8 +1,8 @@
 package Assignment1;
 
-import com.dharshini.assignment.employee.Manager;
-import com.dharshini.assignment.employee.Developer;
-import com.dharshini.assignment.utilities.EmployeeUtilities;
+import Assignment.employee.Developer;
+import Assignment.employee.Manager;
+import Assignment.utilities.EmployeeUtilities;
 
 public class assignmentMain {
     public static void main(String[] args) {
