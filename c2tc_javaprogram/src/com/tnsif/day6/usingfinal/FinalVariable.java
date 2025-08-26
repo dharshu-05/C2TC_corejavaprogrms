@@ -1,34 +1,36 @@
 package com.tnsif.day6.usingfinal;
 
-
 public class FinalVariable {
 
-	// final int x; // final instance variable must be initialized
+    // final instance variable must be initialized
+    final int x = 100;
 
-	final int x = 100;
+    // Declare a static blank final variable (must be initialized in static block)
+    final static int y;
 
-	// Declare a static blank final variable.
-	final static int Y;
+    // Declare & initialize static final variable
+    final static int z = 10;
 
-	// Declare & intialize static final variable.
-	final static int Z = 10;
+    // Static block to initialize static blank final variable y
+    static {
+        y = 50;
+    }
 
-	// instatnce method
-	void change() {
-		x = 30; // final variables can't be reassigned
-		Y = 200; // final static variables can't be reassigned
-	}
+    // instance method
+    void display() {
+        System.out.println("x = " + x);
+        System.out.println("y = " + y);
+        System.out.println("z = " + z);
+    }
 
-	@Override
-	public String toString() {
-		return "FinalVariable [x=" + x + ", Y" + Y + "]";
-	}
+    @Override
+    public String toString() {
+        return "FinalVariable [x=" + x + ", y=" + y + ", z=" + z + "]";
+    }
 
-	// Declare a static block to initialize the final static variable.
-	static {
-		Y = 20;
-		Z = 100; // Once intialized can't be reassigned
-		System.out.println("Value of Y: " + Y);
-	}
-
+    public static void main(String[] args) {
+        FinalVariable obj = new FinalVariable();
+        System.out.println(obj);
+        obj.display();
+    }
 }
